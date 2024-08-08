@@ -1,0 +1,334 @@
+/* Header Styling */
+.header h1 {
+  font-size: 2.5em;
+  color: #f8fffe;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* General App Styling */
+.App {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #5E1B89, #F4512C);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* To-Do List Section */
+.to-do-list {
+  width: 45%;
+  background: #f8fffe;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #5E1B89;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  min-height: 460px;
+}
+
+/* Input and Date Picker Container */
+.input-date-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Input Styling */
+.input-date-container input,
+.react-datepicker__input-container input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #5E1B89;
+  box-sizing: border-box;
+  background-color: #f8fffe;
+  color: #5E1B89;
+  box-shadow: none;
+}
+
+/* Remove focus outline and border color change */
+.input-date-container input:focus,
+.react-datepicker__input-container input:focus {
+  outline: #5E1B89; /* Remove default outline */
+  border-bottom-color: #5E1B89; /* Keep the same border color on focus */
+  box-shadow: none;
+  border-color: #9d71bc;
+}
+
+/* Date and Time Picker Styling */
+.react-datepicker__time-label,
+.react-datepicker__day-name {
+  color: #5E1B89; /* Kulay ng label para sa araw at oras */
+}
+
+/* Add pink outline to edit bar inputs */
+.task input[type="text"] {
+  width: 500px; /* Adjust width as needed */
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #5E1B89; /* Default border color */
+  box-sizing: border-box;
+  background-color: #f8fffe;
+  color: #5E1B89;
+  box-shadow: none; /* Ensure no shadow is applied */
+  margin-bottom: 5px;
+}
+
+/* Focus State for Edit Inputs */
+.task input[type="text"]:focus {
+  outline: 2px solid #9d71bc; /* Pink outline when focused */
+  border-color: #5E1B89; /* Maintain border color */
+  box-shadow: none; /* Ensure no shadow is applied */
+}
+
+/* DatePicker */
+.react-datepicker__input-container input {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #5E1B89;
+  box-sizing: border-box;
+  background-color: #f8fffe;
+  color: #5E1B89;
+}
+
+/* Date and Time Picker Styling */
+.react-datepicker__input-container input {
+  color: #5E1B89;
+}
+
+.react-datepicker__input-container input::-webkit-inner-spin-button,
+.react-datepicker__input-container input::-webkit-calendar-picker-indicator {
+  display: none;
+  background-color: #5E1B89;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+  background-color: #ff7f4d;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list {
+  color: #ff7f4d;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-option {
+  color: #5E1B89;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-option:hover {
+  background-color: #ff7f4d;
+}
+
+/* DatePicker Calendar */
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  border-radius: 6px;
+  background-color: #f8fffe;
+  color: #5E1B89;
+}
+
+/* Calendar Header */
+.react-datepicker__header {
+  background-color: #ff7f4d;
+  border-bottom: none;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+/* Calendar Month Name */
+.react-datepicker__current-month {
+  color: #5E1B89; /* Dark purple color for month name */
+}
+
+.react-datepicker__day {
+  color: #5E1B89 !important; /* Dark purple color for days */
+}
+
+.react-datepicker__day-names {
+  color: #5E1B89 !important; /* Dark purple color for day names (Su, Mo, Tu, etc.) */
+}
+
+.react-datepicker__time-label {
+  color: #5E1B89 !important; /* Dark purple color for time label */
+}
+
+/* Selected Day */
+.react-datepicker__day--selected {
+  background-color: #ff7f4d;
+  color: #f8fffe;
+}
+
+/* Hovered Day */
+.react-datepicker__day--keyboard-selected:hover,
+.react-datepicker__day:hover {
+  background-color: #ff7f4d;
+  color: #f8fffe;
+}
+
+/* Today Highlight */
+.react-datepicker__day--today {
+  font-weight: bold;
+  color: #F4512C;
+}
+
+/* Time Container */
+.react-datepicker__time-container {
+  background-color: #f8fffe;
+  border-left: 2px solid #ff7f4d;
+}
+
+/* Time Box */
+.react-datepicker__time-box {
+  background-color: #f8fffe;
+}
+
+/* Time List */
+.react-datepicker__time-list {
+  color: #5E1B89;
+}
+
+/* Time List Option */
+.react-datepicker__time-list-item {
+  color: #5E1B89;
+}
+
+/* Time List Option Hover */
+.react-datepicker__time-list-item:hover {
+  background-color: #ff7f4d;
+  color: #ff7f4d;
+}
+
+/* Task List */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Individual Task Styling */
+.task {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  background: #f8fffe;
+  border: 2px solid #5E1B89;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
+/* Task Details Styling */
+.task span {
+  display: block;
+}
+
+/* Due Date Styling */
+.due-date {
+  font-size: 0.9em;
+  color: #F4512C;
+  margin-right: 10px;
+}
+
+/* Dark Purple Styling */
+.dark-purple {
+  color: #5E1B89; /* Dark purple color */
+}
+
+/* Completed Tasks Section */
+.completed-tasks {
+  width: 45%;
+  background: #f8fffe;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #F4512C;
+  margin-left: 10px;
+  height: 460px;
+  font-size: 0.9em;
+}
+
+/* Completed Task Styling */
+.completed {
+  background: #ff7f4d;
+}
+
+/* Button Group Styling */
+.button-group {
+  display: flex;
+  gap: 5px;
+}
+
+/* Individual Button Styling */
+.button-group button {
+  background: #9d71bc;
+  color: #f8fffe;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+}
+
+/* Button Hover Effect */
+.button-group button:hover {
+  background: #ff7f4d;
+}
+
+.completed span {
+  text-decoration: line-through;
+  font-size: 1em;
+}
+
+.completed .done-time {
+  text-decoration: none; 
+  color: #F4512C;
+  font-size: 1em;
+}
+
+/* Completed Task Container Styling */
+.completed-tasks .task {
+  background: none;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #F4512C;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.task-details {
+  display: block; /* Makes the div a block-level element */
+  margin-top: 5px; /* Adds some spacing between the task text and details */
+  font-size: 0.9em; /* Sets the font size for the details */
+}
+
+/* Responsive Input Styling */
+@media (max-width: 768px) {
+  .input-date-container {
+    flex-direction: column;
+  }
+
+  .input-date-container input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
